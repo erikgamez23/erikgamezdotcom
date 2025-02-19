@@ -1,3 +1,3 @@
 # erikgamezdotcom
 
-## Messing around with React 
+Messing around with React 
