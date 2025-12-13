@@ -3,6 +3,15 @@
 2) Get Photography galleries uploaded
 3) Is there some sort of Immich API I can use to access photos and automatically pull those? 
 
+# Documentation for Custom Domain: 
+[Shit](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+
+
+
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
