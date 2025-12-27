@@ -1,7 +1,6 @@
-# TODO 
-1) Figure out the GitHub Actions workflow to get the website deployed to my domain. 
-2) Get Photography galleries uploaded
-3) Is there some sort of Immich API I can use to access photos and automatically pull those? 
+ ## TODO 
+[] Get Static Photos uploaded
+[] Could I pull in Immich Photos/Google Photos?
 
 # Documentation for Custom Domain: 
 [Shit] (https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
