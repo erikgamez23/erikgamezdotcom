@@ -1,7 +1,7 @@
 import '@mantine/core/styles.css';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
-import { FaHome, FaCamera } from 'react-icons/fa';
-import { LinkWithIcon } from './components/LinkWithIcon';
+// import { FaHome, FaCamera } from 'react-icons/fa';
+// import { LinkWithIcon } from './components/LinkWithIcon';
 import './App.css'
 import Home from './pages/Home';
 import Photography from './pages/Photography';
@@ -9,10 +9,10 @@ import Photography from './pages/Photography';
 const Layout = () => {
   return ( 
     <div>
-      <nav className="sticky-nav" style={{display:'center', gap:'2rem'}}>
+      {/* <nav className="sticky-nav" style={{display:'flex', justifyContent:'center', gap:'2rem'}}>
         <LinkWithIcon to="/" label="Home" icon={<FaHome />} />
         <LinkWithIcon to="/photography" label="Photography" icon={<FaCamera />} />
-      </nav>
+      </nav> */}
 
       <main style={{ padding: '1rem' }}>
         <Outlet />

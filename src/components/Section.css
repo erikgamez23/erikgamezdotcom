@@ -1,0 +1,23 @@
+/* Section layout */
+.sectionContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+  border-radius: 6em;
+  padding: 1em
+}
+
+.sectionImage {
+  border: 4pt solid; 
+  border-color: var(--color-erikBlue);
+  border-radius: 6em;
+  padding: 0.5em;
+  width: 300px; 
+  height: auto;
+}
+
+.sectionText {
+  text-align: center;
+  padding: 0.5em;
+}
