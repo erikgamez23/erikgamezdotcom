@@ -1,0 +1,23 @@
+:root {
+    /* Primary / brand colors */
+    --color-erikBlue: #61dafbaa;
+    /* --color-primary: #0066ff;
+    --color-primary-dark: #0040c2; */
+
+    /* Secondary / accent */
+    /* --color-secondary: #ff6600;
+    --color-secondary-light: #ffa64d; */
+
+    /* Neutral palette */
+    --color-bg: #ffffff;
+    --color-text: #222222;
+    --color-border: #e5e5e5;
+
+    /* Utility colors */
+    --color-success: #28a745;
+    --color-warning: #ffc107;
+    --color-danger: #dc3545;
+
+    /* Hover */
+    --color-hover: #535bf2;
+}

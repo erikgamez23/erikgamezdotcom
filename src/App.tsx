@@ -1,34 +1,40 @@
 import '@mantine/core/styles.css';
-import { MantineProvider } from '@mantine/core';
-
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-import erikPhoto from '/erik.png'
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
+// import { FaHome, FaCamera } from 'react-icons/fa';
+// import { LinkWithIcon } from './components/LinkWithIcon';
 import './App.css'
+import Home from './pages/Home';
+import Photography from './pages/Photography';
+
+const Layout = () => {
+  return ( 
+    <div>
+      {/* <nav className="sticky-nav" style={{display:'flex', justifyContent:'center', gap:'2rem'}}>
+        <LinkWithIcon to="/" label="Home" icon={<FaHome />} />
+        <LinkWithIcon to="/photography" label="Photography" icon={<FaCamera />} />
+      </nav> */}
+
+      <main style={{ padding: '1rem' }}>
+        <Outlet />
+      </main>
+    </div>
+  )
+}
+
+const router = createBrowserRouter([
+  {
+      path: "/",
+      element: <Layout/>,
+      children: [
+        { path: "/", element: <Home/> },
+        { path: "/photography", element: <Photography/> },
+        { path: "*", element: <h1> 404 Not Found </h1> }
+      ], 
+  } 
+])
 
 function App() {
-  // const [count, setCount] = useState(0)
-
-  return <MantineProvider>{
-    (
-      <>
-        <div>
-          {/* <a href="https://vite.dev" target="_blank"> */}
-            <img src={erikPhoto} className="erikPhoto" alt="Erik Gamez" />
-          {/* </a> */}
-        </div>
-        <h1> Hey, thanks for visiting! </h1>
-        <h2> Not sure how often I'll update, but I'll try and keep it fresh. </h2>
-        
-        {/* <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            {count}
-          </button>
-        </div> */}
-        
-      </>
-    )
-  }</MantineProvider>
+  return <RouterProvider router={router} />
 }
 
 export default App

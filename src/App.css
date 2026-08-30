@@ -1,3 +1,5 @@
+@import './design/palette.css';
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,19 +7,30 @@
   text-align: center;
 }
 
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 1rem;
+  z-index: 10;
+  /* border: 4pt solid; 
+  border-color: var(--color-erikBlue);
+  border-radius: 6em; */
+}
+
 .erikPhoto {
   height: 30em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 50ms;
   border-radius: 12em;
   border: 1em;
 }
 .erikPhoto:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em var(--color-hover));
 }
 .erikPhoto.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em var(--color-erikBlue));
 }
 
 @keyframes erikPhoto-spin {
@@ -37,8 +50,4 @@
 
 .card {
   padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
