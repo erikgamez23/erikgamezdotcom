@@ -18,7 +18,7 @@ const Section: React.FC<SectionProps> = ({
 }) => {
   const hasImage = !!imageSrc;
   const containerStyle = {
-    flexDirection: side === 'left' ? 'row' : 'row-reverse',
+    flexDirection: side === 'left' ? 'row' as 'row' : 'row-reverse' as 'row-reverse',
     ...(hasImage ? {} : { border: '2pt solid var(--color-erikBlue)' }),
     ...(hasImage ? {} : { padding: '24pt' }),
   };
