@@ -1,6 +1,6 @@
-import erikPhoto from '/erik.png'
+import erikPhoto from '../assets/erik.png'
 import Section from '../components/Section'
-import erikMnt from '/erikmountain.jpg'
+import erikMnt from '../assets/erikmountain.jpg'
 import '../App.css'
 
 const Home = () => {
