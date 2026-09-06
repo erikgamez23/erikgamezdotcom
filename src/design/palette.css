@@ -19,5 +19,5 @@
     --color-danger: #dc3545;
 
     /* Hover */
-    --color-hover: #535bf2;
+    --color-hover: var(--color-erikBlue);
 }

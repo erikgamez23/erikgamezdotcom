@@ -26,8 +26,8 @@ const Section: React.FC<SectionProps> = ({
     <div className="sectionContainer" style={containerStyle}>
       {imageSrc && (<img src={imageSrc} alt={imageAlt} className="sectionImage" />)}
       <div className="sectionText">
-        <h1>{title}</h1>
-        <h2>{body}</h2>
+        <h2>{title}</h2>
+        <h3>{body}</h3>
       </div>
     </div>
   );
