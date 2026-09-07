@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import type { CSSProperties, ReactNode } from 'react';
+import '../App.css'
 
 interface LinkWithIconProps {
   /** Destination path for the link */
@@ -16,7 +17,7 @@ export const LinkWithIcon = ({ to, label, icon, style }: LinkWithIconProps) => {
   return (
     <Link to={to} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', ...style }}>
       {icon}
-      {label}
+      <p>{label}</p>
     </Link>
   );
 };

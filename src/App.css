@@ -1,8 +1,13 @@
-@import './design/palette.css';
+@import './design/palette.css';                                             
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Pixelify+Sans:wght@400..700&display=swap');
+
+h1, h2, h3 { 
+  font-family: "Jura", serif;
+}
 
 #root {
   margin: 0 auto;
-  padding: 5rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -11,45 +16,26 @@
   top: 1%;
   left: 50%;
   transform: translateX(-50%);
-  padding: 1rem;
+  padding-inline: 1em;
   border-radius: 400px;
   z-index: 1000;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(100px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.erikPhoto {
-  height: 30em;
+.leadPhoto {
+  height: 35em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 50ms;
+  transition: filter 75ms;
   border-radius: 12em;
   border: 1em;
 }
-.erikPhoto:hover {
+.leadPhoto:hover {
   filter: drop-shadow(0 0 2em var(--color-hover));
 }
-.erikPhoto.react:hover {
+.leadPhoto.react:hover {
   filter: drop-shadow(0 0 2em var(--color-erikBlue));
-}
-
-@keyframes erikPhoto-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .erikPhoto {
-    animation: erikPhoto-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
 }
