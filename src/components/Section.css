@@ -1,23 +1,31 @@
-/* Section layout */
 .sectionContainer {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   margin: 0 auto;
   border-radius: 6em;
-  padding: 1em
+  max-width: 90vh;
 }
 
 .sectionImage {
-  border: 4pt solid; 
-  border-color: var(--color-erikBlue);
+  border: 4pt solid var(--color-erikBlue);
   border-radius: 6em;
-  padding: 0.5em;
-  width: 300px; 
+  padding: 1rem;
+  width: 30vh; 
   height: auto;
 }
 
 .sectionText {
   text-align: center;
-  padding: 0.5em;
+  padding: 1em;
 }
+
+/* @media (max-width: 768px) {
+  .sectionContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sectionImage {
+    max-width: 100%;
+  }
+} */
