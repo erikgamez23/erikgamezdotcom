@@ -1,12 +1,3 @@
- ## TODO 
-[] Get Static Photos uploaded
-[] Could I pull in Immich Photos/Google Photos?
-
-# Documentation for Custom Domain: 
-[Shit] (https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
-
-
-
 # To run
 - npm install
 - npm run dev
