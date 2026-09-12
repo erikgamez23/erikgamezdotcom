@@ -19,7 +19,7 @@ h3 {
   position: fixed;
   top: 1%;
   left: 50%;
-  width: 40vh;
+  min-width: 40vh;
   transform: translateX(-50%);
   padding-inline: 1em;
   border-radius: 400px;
