@@ -22,7 +22,7 @@ h3 {
   min-width: 40vh;
   transform: translateX(-50%);
   padding-inline: 1em;
-  border-radius: 400px;
+  border-radius: 70px;
   z-index: 1000;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(100px);
@@ -31,7 +31,7 @@ h3 {
 }
 
 .leadPhoto {
-  width: 70vh;
+  max-width: 70vh;
   height: auto;
   padding: 1.5em;
   will-change: filter;
