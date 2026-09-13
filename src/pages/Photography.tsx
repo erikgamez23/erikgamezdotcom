@@ -12,10 +12,10 @@ const Photography = () => {
       <div>
         <h1> Fujifilm X-T30iii w/ XF 1:3.5-4.8 R LM OIS 55-200mm </h1>
         <img src={lighthouse} className="leadPhoto" alt="Lighthouse" />
-        <img src={waterman} className="leadPhoto" alt="man near lake" />
+        <img src={pinkflower} className="leadPhoto" alt="Pink flower with vivid blue background" />
         <img src={sepButterfly} className="leadPhoto" alt="butterfly" />
         <img src={train} className="leadPhoto" alt="Pink Line Chicago Train" />
-        <img src={pinkflower} className="leadPhoto" alt="Pink flower with vivid blue background" />
+        <img src={waterman} className="leadPhoto" alt="man near lake" />
       </div>
     </>
   )

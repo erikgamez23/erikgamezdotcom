@@ -21,11 +21,11 @@ export const LinkWithIcon = ({ to, label, icon, style }: LinkWithIconProps) => {
       style={({ isActive }) => ({
         display: 'inline-flex',
         alignItems: 'center',
-        gap: '0.5rem',
+        gap: '1vw',
         textDecoration: 'none',
-        fontWeight: isActive ? 'bold' : 'normal',
+        fontWeight: isActive ? 'bolder' : 'normal',
         borderBottomStyle: isActive ? 'solid' : 'none',
-        padding: '4pt 8pt',
+        paddingInline: '2pt',
         color: isActive ? 'var(--color-erikBlue)' : 'inherit',
         ...style,
       })}

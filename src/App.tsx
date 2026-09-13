@@ -11,7 +11,7 @@ import Photography from './pages/Photography';
 const Layout = () => {
   return (
     <div>
-      <nav className="sticky-nav" style={{ display: 'flex', justifyContent: 'center', gap: '5rem' }}>
+      <nav className="sticky-nav" style={{ display: 'flex', justifyContent: 'center', gap: '3rem' }}>
         <LinkWithIcon
           to="/"
           label="Me"
