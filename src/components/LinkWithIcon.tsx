@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import type { CSSProperties, ReactNode } from 'react';
 import '../App.css'
 
@@ -15,9 +15,23 @@ interface LinkWithIconProps {
 
 export const LinkWithIcon = ({ to, label, icon, style }: LinkWithIconProps) => {
   return (
-    <Link to={to} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', ...style }}>
+    <NavLink
+      to={to}
+      end={to === '/'}
+      style={({ isActive }) => ({
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: '0.5rem',
+        textDecoration: 'none',
+        fontWeight: isActive ? 'bold' : 'normal',
+        borderBottomStyle: isActive ? 'solid' : 'none',
+        padding: '4pt 8pt',
+        color: isActive ? 'var(--color-erikBlue)' : 'inherit',
+        ...style,
+      })}
+    >
       {icon}
       <p>{label}</p>
-    </Link>
+    </NavLink>
   );
 };
