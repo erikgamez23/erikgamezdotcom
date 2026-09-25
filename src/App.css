@@ -35,7 +35,7 @@ h3 {
   height: auto;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 75ms;
+  transition: ease-in-out 75ms;
   border-radius: 12em;
   border: 1em solid transparent;
 }
